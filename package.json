@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Torabek/merny/issues"
   },
-  "homepage": "https://github.com/Torabek/merny#readme"
+  "homepage": "https://github.com/Torabek/merny#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
