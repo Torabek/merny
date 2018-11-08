@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const router = express.Router();
 const User = require('../../models/User');
 const gravatar = require('gravatar');
+const bcryptjs = require('bcryptjs')
 // @routes GET api/users/test
 // @desc Test users route
 // @access PUBLIC
@@ -40,6 +41,18 @@ router.get('/register', (req, res) => {
         password: req.body.password,
         avatar
       });
+
+      bcryptjs.genSalt(10, (err, salt) => {
+        bcryptjs.hash(newuser.password, salt, (err, hash) => {
+          if (err) throw err;
+          newuser.password = hash;
+          newuser.save()
+            .then(user => {
+              res.json(json)
+            })
+            .catch(err => console.log(err));
+        })
+      })
 
     }
   })
