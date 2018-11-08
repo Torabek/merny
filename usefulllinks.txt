@@ -8,3 +8,11 @@ https://github.com/Torabek/merny/tree/nodejs
 
 
 git reset --soft HEAD~1 
+
+
+/// before pushing
+
+git add .
+git commit -m "BLL"
+git push origin nodejs
+ 
