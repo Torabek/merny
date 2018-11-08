@@ -15,11 +15,11 @@ router.get("/test", (req, res) => {
   });
 });
 
-// @routes GET api/users/register
+// @routes POST api/users/register
 // @desc register users
 // @access PUBLIC
 
-router.get('/register', (req, res) => {
+router.post('/register', (req, res) => {
   User.findOne({
     email: req.body.email
   }).then(user => {
@@ -52,7 +52,7 @@ router.get('/register', (req, res) => {
             })
             .catch(err => console.log(err));
         })
-      })
+      });
 
     }
   })
