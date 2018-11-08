@@ -11,10 +11,8 @@ https://help.github.com/articles/setting-your-commit-email-address-in-git/
 
 git reset --soft HEAD~1 
 
-
 /// before pushing
 
 git add .
 git commit -m "BLL"
 git push origin nodejs
- 
