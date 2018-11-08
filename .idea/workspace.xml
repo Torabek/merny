@@ -7,6 +7,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1873048445">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf />
   </component>
@@ -2369,7 +2378,7 @@
       <option name="presentableId" value="Default" />
       <updated>1541604933253</updated>
       <workItem from="1541604934518" duration="2485000" />
-      <workItem from="1541608478097" duration="2551000" />
+      <workItem from="1541608478097" duration="2622000" />
     </task>
     <task id="LOCAL-00001" summary="Bekhruz commited a crime">
       <created>1541605134925</created>
@@ -2409,7 +2418,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265000" />
+    <option name="totallyTimeSpent" value="336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
