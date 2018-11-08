@@ -17,6 +17,17 @@
   },
   "homepage": "https://github.com/Torabek/merny#readme",
   "dependencies": {
+<<<<<<< HEAD
     "express": "^4.16.4"
+=======
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.10",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.8.0"
+>>>>>>> e2a3f6dfccfc70a8648d1451460b50d7c520d32e
   }
 }
