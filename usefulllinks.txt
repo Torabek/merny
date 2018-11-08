@@ -17,3 +17,6 @@ git add .
 git commit -am "BLL"
 git push origin nodejs
  
+
+// gravatar read the resource
+https://github.com/emerleite/node-gravatar

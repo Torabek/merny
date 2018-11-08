@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const bodyparser = require('body-parser');
 
 const app = express();
 // require from /routes/api
@@ -10,6 +11,12 @@ const posts = require('./routers/api/post');
 
 //DB config
 const db = require('./config/keys').mongoURI
+
+// body parser middileware 
+app.use(bodyparser.urlencoded({
+  extended: false
+}));
+app.use(bodyparser.json())
 
 // connect to mongodb 
 mongoose.connect(db)
