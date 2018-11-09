@@ -15,6 +15,21 @@ router.get("/test", (req, res) => {
   });
 });
 
+
+// @routes POST api/users/login
+// @desc Login User
+// @access PUBLIC
+
+router.post('/login', (req, res) => {
+  const condidate = User.findOne({
+    email: req.body.email
+  });
+
+});
+
+
+
+
 // @routes POST api/users/register
 // @desc register users
 // @access PUBLIC
