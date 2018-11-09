@@ -9,6 +9,9 @@ https://github.com/Torabek/merny/tree/nodejs
 https://help.github.com/articles/setting-your-commit-email-address-in-git/
 
 
+//
+https://stackoverflow.com/questions/1709177/git-pull-a-certain-branch-from-github
+
 git reset --soft HEAD~1 
 
 /// before pushing
@@ -17,8 +20,6 @@ git add .
 git commit -am "BLL"
 git push origin nodejs
  
-
-
 
 // gravatar read the resource
 https://github.com/emerleite/node-gravatar
