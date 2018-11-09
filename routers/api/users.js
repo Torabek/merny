@@ -4,9 +4,9 @@ const mongoose = require("mongoose");
 const router = express.Router();
 const User = require('../../models/User');
 const gravatar = require('gravatar');
-const bcryptjs = require('bcryptjs')
-const jwt = require('jsonwebtoken')
-const keys = require('../../config/key');
+const bcryptjs = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const keys = require('../../config/keys');
 // @routes GET api/users/test
 // @desc Test users route
 // @access PUBLIC
@@ -56,9 +56,6 @@ router.post('/login', (req, res) => {
               })
             });
 
-            res.json({
-              msg: "Success"
-            });
           } else {
             res.status(400).json({
               password: "password didnot match"
