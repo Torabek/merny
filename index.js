@@ -18,6 +18,7 @@ app.use(bodyparser.urlencoded({
 }));
 app.use(bodyparser.json())
 
+
 // connect to mongodb 
 mongoose.connect(db)
   .then(() => console.log("Mongo db connected"))
@@ -25,7 +26,7 @@ mongoose.connect(db)
     console.log("error")
   });
 
-// use ROutes
+// use Routes
 app.use('/api/users', users);
 app.use('/api/profile', profile);
 app.use('/api/posts', posts);
