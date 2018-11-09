@@ -27,4 +27,4 @@ https://github.com/emerleite/node-gravatar
 =======
 
 git reset --soft HEAD~1 
->>>>>>> master
+

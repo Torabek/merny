@@ -55,7 +55,6 @@ router.post('/login', (req, res) => {
                 token: 'Baerer ' + token
               })
             });
-
           } else {
             res.status(400).json({
               password: "password didnot match"
