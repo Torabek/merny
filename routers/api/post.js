@@ -6,7 +6,6 @@ const router = express.Router();
 // @routes GET api/posts/test
 // @desc Test post route
 // @access PUBLIC
-
 router.get("/test", (req, res) => {
   res.json({
     msg: "posts work"
