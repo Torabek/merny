@@ -21,9 +21,20 @@ router.get("/test", (req, res) => {
 // @access PUBLIC
 
 router.post('/login', (req, res) => {
+
+  //find user by email
   const condidate = User.findOne({
-    email: req.body.email
-  });
+      email: req.body.email
+    })
+    .then(user => {
+      // check for user
+      if (!user) {
+        return res.status(404).json({
+          email: "user not found"
+        });
+      }
+    })
+
 
 });
 
