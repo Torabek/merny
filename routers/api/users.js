@@ -45,7 +45,7 @@ router.post('/login', (req, res) => {
               password: "password didnot match"
             })
           }
-        })
+        });
 
 
     })
